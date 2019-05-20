@@ -2,13 +2,131 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-body {
-  box-sizing: border-box;
-  min-width: 300px;
-  margin: 0;
+  font-size: 62.5%;
 }
 .nav-bar nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 15px 5%;
+}
+.nav-bar nav a {
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 5px 3%;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.5rem;
+}
+.hero-content div > img {
+  width: 100%;
+  height: auto;
+}
+.hero-content .hero-text {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+.hero-content .hero-text h1 {
+  text-align: center;
+  margin: 0px 3%;
+  color: #ffffff;
+  font-size: 3.5rem;
+}
+.hero-content .hero-text button {
+  padding: 10px 0%;
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 2.2rem;
+}
+.problem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.problem .problem-text {
+  text-align: center;
+  font-size: 2.8rem;
+}
+.problem .problem-text h2 {
+  margin: 30px 0% 2px 0%;
+}
+.problem .problem-text hr {
+  margin: 0px 30% 10px 30%;
+}
+.problem .problem-text p {
+  margin-bottom: 10px;
+}
+.problem .problem-image img {
+  width: 100%;
+  height: auto;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products .products-text {
+  text-align: center;
+  font-size: 2.8rem;
+}
+.products .products-text h2 {
+  margin: 30px 0% 2px 0%;
+}
+.products .products-text hr {
+  margin: 0px 40% 10px 40%;
+}
+.products .products-text p {
+  margin-bottom: 10px;
+}
+.products .products-image img {
+  width: 100%;
+  height: auto;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features .features-text {
+  text-align: center;
+  font-size: 2.8rem;
+}
+.features .features-text h2 {
+  margin: 30px 0% 2px 0%;
+}
+.features .features-text hr {
+  margin: 0px 40% 10px 40%;
+}
+.features .features-text p {
+  margin-bottom: 10px;
+}
+.features .features-image img {
+  width: 100%;
+  height: auto;
+}
+.contact {
+  margin: 10px 0%;
+  font-size: 3.5rem;
+}
+.contact p {
+  font-size: 1.5rem;
+}
+footer p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+body {
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0;
+  background-image: url('/img/red-blue-texture.jpg');
+  padding: 10px 2% 10px 2%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-position-x: center;
+  color: #ffffff;
 }
