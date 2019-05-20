@@ -1,8 +1,5 @@
 .hero-content {
-    div > img {
-        width: 100%;
-        height: auto;
-    }
+
     .hero-text {
         display: flex;
         align-content: center;
@@ -19,6 +16,12 @@
             color: @white;
             font-size: @h1-font;
             -webkit-text-stroke: 1px @white;
+
+            @media @desktop {
+                padding: 200px 0% 50px 0%;
+                margin: 0px 20%;
+                line-height: 1.2;
+            }
         }
 
         button {

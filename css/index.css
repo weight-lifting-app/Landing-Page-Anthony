@@ -143,8 +143,8 @@ img {
 }
 body {
   box-sizing: border-box;
-  max-width: 999px;
-  margin: 0;
+  max-width: 500px;
+  margin: 0px auto;
   background-image: url('/img/red-blue-texture.jpg');
   padding: 10px 2% 10px 2%;
   background-size: auto;
@@ -154,8 +154,8 @@ body {
 }
 @media (min-width:1000px) {
   body {
-    max-width: 1000px;
-    padding: 10px 5%;
+    max-width: 1500px;
+    padding: 10px 10%;
   }
 }
 .nav-bar nav {
@@ -171,10 +171,13 @@ body {
   background-color: #ffffff;
   color: #000000;
   font-size: 1.5rem;
+  width: 32%;
+  text-align: center;
 }
-.hero-content div > img {
-  width: 100%;
-  height: auto;
+@media (min-width:1000px) {
+  .nav-bar nav a {
+    width: 25%;
+  }
 }
 .hero-content .hero-text {
   display: flex;
@@ -193,6 +196,13 @@ body {
   font-size: 3.5rem;
   -webkit-text-stroke: 1px #ffffff;
 }
+@media (min-width:1000px) {
+  .hero-content .hero-text h1 {
+    padding: 200px 0% 50px 0%;
+    margin: 0px 20%;
+    line-height: 1.2;
+  }
+}
 .hero-content .hero-text button {
   padding: 10px 0%;
   font-size: 2.2rem;
@@ -206,8 +216,21 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width:1000px) {
+  .problem {
+    flex-direction: row;
+    margin: 50px 0%;
+    align-items: flex-start;
+  }
+}
 .problem .problem-text {
   text-align: center;
+}
+@media (min-width:1000px) {
+  .problem .problem-text {
+    width: 50%;
+    padding-right: 5%;
+  }
 }
 .problem .problem-text h2 {
   margin: 30px 0% 2px 0%;
@@ -216,21 +239,48 @@ body {
 .problem .problem-text hr {
   margin: 0px 30% 10px 30%;
 }
+@media (min-width:1000px) {
+  .problem .problem-text hr {
+    margin: 0px 10% 10px 10%;
+  }
+}
 .problem .problem-text p {
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
+@media (min-width:1000px) {
+  .problem .problem-image {
+    width: 50%;
+  }
+}
 .problem .problem-image img {
   width: 100%;
   height: auto;
+}
+@media (min-width:1000px) {
+  .problem .problem-image img {
+    border-radius: 10px;
+  }
 }
 .products {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (min-width:1000px) {
+  .products {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+}
 .products .products-text {
   text-align: center;
+}
+@media (min-width:1000px) {
+  .products .products-text {
+    width: 50%;
+    padding-left: 5%;
+  }
 }
 .products .products-text h2 {
   margin: 30px 0% 2px 0%;
@@ -239,21 +289,47 @@ body {
 .products .products-text hr {
   margin: 0px 40% 10px 40%;
 }
+@media (min-width:1000px) {
+  .products .products-text hr {
+    margin: 0px 30% 10px 30%;
+  }
+}
 .products .products-text p {
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
+@media (min-width:1000px) {
+  .products .products-image {
+    width: 50%;
+  }
+}
 .products .products-image img {
   width: 100%;
   height: auto;
+}
+@media (min-width:1000px) {
+  .products .products-image img {
+    border-radius: 10px;
+  }
 }
 .features {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (min-width:1000px) {
+  .features {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
 .features .features-text {
   text-align: center;
+}
+@media (min-width:1000px) {
+  .features .features-text {
+    width: 50%;
+  }
 }
 .features .features-text h2 {
   margin: 30px 0% 2px 0%;
@@ -262,13 +338,28 @@ body {
 .features .features-text hr {
   margin: 0px 40% 10px 40%;
 }
+@media (min-width:1000px) {
+  .features .features-text hr {
+    margin: 0px 33% 10px 33%;
+  }
+}
 .features .features-text p {
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
+@media (min-width:1000px) {
+  .features .features-image {
+    width: 50%;
+  }
+}
 .features .features-image img {
   width: 100%;
   height: auto;
+}
+@media (min-width:1000px) {
+  .features .features-image img {
+    border-radius: 10px;
+  }
 }
 .contact {
   margin: 10px 0%;
