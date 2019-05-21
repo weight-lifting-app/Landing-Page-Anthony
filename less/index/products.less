@@ -18,6 +18,7 @@
             width: 50%;
             padding-left: 5%;
             text-align: right;
+            margin-top: 60px;
         }
 
         h2 {
@@ -36,6 +37,13 @@
         p {
             margin-bottom: 10px;
             font-size: @p-font;
+            line-height: 1.4;
+
+            @media @desktop{
+                margin-top: 30px;
+                font-size: @h2-font;
+                margin-bottom: 0px;
+            }
         }
     }
 
@@ -47,9 +55,11 @@
         img{
             width: 100%;
             height: auto;
+            display:none;
 
             @media @desktop{
                 border-radius: 10px;
+                display: flex;
             }
         }
     }
