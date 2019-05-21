@@ -1,34 +1,35 @@
-.problem {
-
+.products { 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    @media @desktop {
-        flex-direction: row;
-        margin: 50px 0%;
+    @media @desktop{
+        flex-direction: row-reverse;
         align-items: flex-start;
+        margin: 50px 15%;
     }
 
-    .problem-text{
+    
+
+    .products-text{
         text-align: center;
 
         @media @desktop{
-            width:50%;
-            padding-right: 5%;
-        } 
-        
+            width: 50%;
+            padding-left: 5%;
+            text-align: right;
+        }
 
         h2 {
             margin: 30px 0% 2px 0%;
             font-size: @h1-font;
         }
 
-        hr{
-            margin: 0px 30% 10px 30%;
+        hr {
+            margin: 0px 40% 10px 40%;
 
             @media @desktop{
-                margin: 0px 10% 10px 10%;
+                margin: 0px 0% 10px 80%;
             }
         }
 
@@ -38,12 +39,12 @@
         }
     }
 
-    .problem-image{
+    .products-image{
+
         @media @desktop{
             width: 50%;
         }
-
-        img {
+        img{
             width: 100%;
             height: auto;
 

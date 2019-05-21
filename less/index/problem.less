@@ -1,45 +1,58 @@
-.features {
+.problem {
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    @media @desktop{
+    @media @desktop {
         flex-direction: row;
+        margin: 50px 15%;
         align-items: flex-start;
+        
     }
 
-    .features-text{
+    .problem-text{
         text-align: center;
 
         @media @desktop{
-            width: 50%;
-        }
+            width:50%;
+            padding-right: 5%;
+            text-align: left;
+            line-height: 1.2;
+            
+        } 
+        
 
         h2 {
             margin: 30px 0% 2px 0%;
             font-size: @h1-font;
-        }
-
-        hr {
-            margin: 0px 40% 10px 40%;
 
             @media @desktop{
-                margin: 0px 33% 10px 33%;
+                margin:0px 0%;
             }
         }
-        
+
+        hr{
+            margin: 0px 30% 10px 30%;
+
+            @media @desktop{
+                width: 45%;
+                margin: 0px 0% 10px 0%;
+            }
+        }
+
         p {
             margin-bottom: 10px;
             font-size: @p-font;
         }
     }
 
-    .features-image{
-
+    .problem-image{
         @media @desktop{
             width: 50%;
         }
-        img{
+
+        img {
             width: 100%;
             height: auto;
 

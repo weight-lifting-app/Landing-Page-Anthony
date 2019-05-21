@@ -1,5 +1,7 @@
 .hero-content {
-
+    @media @desktop {
+        margin: 0px 15%;
+    }
     .hero-text {
         display: flex;
         align-content: center;
@@ -23,14 +25,19 @@
                 line-height: 1.2;
             }
         }
-
-        button {
-            padding: 10px 0%;
-            font-size: 2.2rem;
-            background-color: @white;
-            border: 2px solid @white;
-            border-radius: 10px;
+        a{
+            text-decoration: none;
             color: #000000;
+        
+            button {
+                padding: 10px 0%;
+                font-size: 2.2rem;
+                background-color: @white;
+                border: 2px solid @white;
+                border-radius: 10px;
+                width: 100%;
+                cursor: grab;
+            }
         }
     }
 }

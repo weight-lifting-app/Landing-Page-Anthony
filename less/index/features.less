@@ -1,21 +1,21 @@
-.products { 
+.features {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @media @desktop{
-        flex-direction: row-reverse;
+        flex-direction: row;
         align-items: flex-start;
+        margin: 0px 15%;
     }
 
-    
-
-    .products-text{
+    .features-text{
         text-align: center;
 
         @media @desktop{
             width: 50%;
-            padding-left: 5%;
+            padding-right: 5%;
+            text-align: left;
         }
 
         h2 {
@@ -27,17 +27,18 @@
             margin: 0px 40% 10px 40%;
 
             @media @desktop{
-                margin: 0px 30% 10px 30%;
+                width: 23%;
+                margin: 0px 0% 10px 0%;
             }
         }
-
+        
         p {
             margin-bottom: 10px;
             font-size: @p-font;
         }
     }
 
-    .products-image{
+    .features-image{
 
         @media @desktop{
             width: 50%;
