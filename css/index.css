@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Comfortaa', cursive;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0px auto;
+  background-image: url('/img/red-blue-texture.jpg');
+  padding: 10px 2% 10px 2%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-position-x: center;
+  color: #ffffff;
+}
+@media (min-width:1000px) {
+  body {
+    max-width: 1500px;
+    padding: 10px 10%;
+  }
+}
+.nav-bar nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0%;
+}
+.nav-bar nav a {
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 5px 2%;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.5rem;
+  width: 32%;
+  text-align: center;
+}
+@media (min-width:1000px) {
+  .nav-bar nav a {
+    width: 25%;
+  }
+}
+.hero-content .hero-text {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  background-image: url("/img/ropes.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.hero-content .hero-text h1 {
+  text-align: center;
+  padding: 80px 10% 10px 10%;
+  margin: 0px 3%;
+  color: #ffffff;
+  font-size: 3.5rem;
+  -webkit-text-stroke: 1px #ffffff;
+}
+@media (min-width:1000px) {
+  .hero-content .hero-text h1 {
+    padding: 200px 0% 50px 0%;
+    margin: 0px 20%;
+    line-height: 1.2;
+  }
+}
+.hero-content .hero-text button {
+  padding: 10px 0%;
+  font-size: 2.2rem;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #000000;
+}
+.problem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:1000px) {
+  .problem {
+    flex-direction: row;
+    margin: 50px 0%;
+    align-items: flex-start;
+  }
+}
+.problem .problem-text {
+  text-align: center;
+}
+@media (min-width:1000px) {
+  .problem .problem-text {
+    width: 50%;
+    padding-right: 5%;
+  }
+}
+.problem .problem-text h2 {
+  margin: 30px 0% 2px 0%;
+  font-size: 3.5rem;
+}
+.problem .problem-text hr {
+  margin: 0px 30% 10px 30%;
+}
+@media (min-width:1000px) {
+  .problem .problem-text hr {
+    margin: 0px 10% 10px 10%;
+  }
+}
+.problem .problem-text p {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+@media (min-width:1000px) {
+  .problem .problem-image {
+    width: 50%;
+  }
+}
+.problem .problem-image img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width:1000px) {
+  .problem .problem-image img {
+    border-radius: 10px;
+  }
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:1000px) {
+  .products {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+}
+.products .products-text {
+  text-align: center;
+}
+@media (min-width:1000px) {
+  .products .products-text {
+    width: 50%;
+    padding-left: 5%;
+  }
+}
+.products .products-text h2 {
+  margin: 30px 0% 2px 0%;
+  font-size: 3.5rem;
+}
+.products .products-text hr {
+  margin: 0px 40% 10px 40%;
+}
+@media (min-width:1000px) {
+  .products .products-text hr {
+    margin: 0px 30% 10px 30%;
+  }
+}
+.products .products-text p {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+@media (min-width:1000px) {
+  .products .products-image {
+    width: 50%;
+  }
+}
+.products .products-image img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width:1000px) {
+  .products .products-image img {
+    border-radius: 10px;
+  }
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:1000px) {
+  .features {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.features .features-text {
+  text-align: center;
+}
+@media (min-width:1000px) {
+  .features .features-text {
+    width: 50%;
+  }
+}
+.features .features-text h2 {
+  margin: 30px 0% 2px 0%;
+  font-size: 3.5rem;
+}
+.features .features-text hr {
+  margin: 0px 40% 10px 40%;
+}
+@media (min-width:1000px) {
+  .features .features-text hr {
+    margin: 0px 33% 10px 33%;
+  }
+}
+.features .features-text p {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+@media (min-width:1000px) {
+  .features .features-image {
+    width: 50%;
+  }
+}
+.features .features-image img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width:1000px) {
+  .features .features-image img {
+    border-radius: 10px;
+  }
+}
+.contact {
+  margin: 10px 0%;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.contact p {
+  font-size: 1.5rem;
+  padding: 1px 0%;
+}
+footer p {
+  text-align: center;
+  font-size: 1.5rem;
+}
