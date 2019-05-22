@@ -10,23 +10,24 @@
   <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
 </head>
 <body>
-  <script defer="defer" src="./js/index.js"></script>
+
   <header>
-    <section class="nav-bar">
-      <a class="nav-items" href="index.html"><h1>LambdaFIT</h1></a>
-      <nav class="nav">
-        <a class="nav-items" href="index.html" target="_blank">Home</a>
-        <a class="nav-items" href="about.html" target="_blank">About</a>      
-        <a class="nav-items" href="https://boring-euclid-601ad3.netlify.com/">Register</a>
+    <section class="nav-bar dropdown">
+      <a class="nav-items dropdown-button"><h1>LambdaFIT</h1></a>
+      <nav class="nav dropdown-content dropdown-hidden">
+        <a class="nav-items dropdown-link" href="index.html">Home</a>
+        <a class="nav-items dropdown-link" href="about.html">About</a>      
+        <a class="nav-items dropdown-link" href="https://boring-euclid-601ad3.netlify.com/">Register</a>
       </nav>
     </section>  
   </header>
+
   <section class="hero-content">
     <div class="hero-text">
       <div>
-          <h1>Log.</h1> 
-          <h1>Lift.</h1>
-          <h1>LambdaFIT.</h1>    
+          <h1 class="text-pop-up-top">Lift It.</h1> 
+          <h1 class="text-pop-up-top">Log It.</h1>
+          <h1 class="text-pop-up-top">LambdaFIT.</h1>    
       </div>
       <br>
       <div>
@@ -40,7 +41,7 @@
 
   <section class="problem">
     <div class="problem-text">
-      <h2>Why Lambda Fit?</h2>
+      <h2 class="text-pop-up-top">Why Lambda Fit?</h2>
       <hr>
       <p>We know how hard it is to consistently lose stubborn body fat and bust through plateaus 
          while simultaneously managing everything else going on in your life!</p>
@@ -55,7 +56,7 @@
 
   <section class="products">
     <div class="products-text">
-      <h2>Product</h2>
+      <h2 class="text-pop-up-top">Product</h2>
       <hr>
       <p>We have concentrated our research efforts around making quick iterations of how to provide a rich UX/UI for gym aficionados. </p>
       <p><br>LambdaFIT is a free app that is accessible to anyone who would like to improve their physical well-being and is struggling to find a fast, efficient way to track progress.</p> 
@@ -68,32 +69,32 @@
 
   <section class="features">
     <div class="features-text">
-      <h2>Features</h2>
+      <h2 class="text-pop-up-top">Features</h2>
       <hr>
       <div class="features-list">
     
-        <div class="list-item">
+        <div class="list-item border-blank pencil">
           <img src="img/pencil-icon.png" alt="Pencil Icon">
           <h2>Record Your Stats</h2>
           <hr>
           <p>Log your daily progress, monitor your reps and gains for maximum energy efficiency.</p>
         </div>
     
-        <div class="list-item">
+        <div class="list-item border-blank search">
           <img src="img/search-icon.png" alt="Search Icon">
           <h2>Find New Workouts</h2>
           <hr>
           <p>User forums with thousands of pre-formulated workout routines guaranteed to get you results.</p>
         </div>
 
-        <div class="list-item">
+        <div class="list-item border-blank dumbbell">
             <img src="img/dumbbell.png" alt="Dumbbell Icon">
             <h2>Exercise Video Tutorials</h2>
             <hr>
             <p>Utilize our built-in instructional workout eLibrary to get tips from the pros.</p>
         </div>
     
-        <div class="list-item">
+        <div class="list-item border-blank chart" alt="Chart Icon"> 
           <img src="img/chart-icon.png">
           <h2>Visualize Your Progress</h2>
           <hr>
@@ -115,6 +116,7 @@
       <a>Privacy Policy</a>
       <a>Terms and Conditions</a>
     </div>
-  </footer>      
+  </footer>
+  <script defer="defer" src="./js/index.js"></script>      
 </body>
 </html>

@@ -41,6 +41,12 @@
             margin: 10px 0% 60px 0%;
             padding:0px 2% 0px 2%;
         }
+
+        .border-blank{
+            @media @desktop{
+                transition: transform .2s;
+            }
+        }
         div{
             @media @desktop{
                 width: 25%;
@@ -109,11 +115,8 @@
         }
     }
 }
-
-.flash-background{
-    border: 5px solid white;
-}
-
-.normal-background{
-    border: none;
+@media @desktop{
+    .flash-border{
+        transform: scale(1.1);
+    }
 }
