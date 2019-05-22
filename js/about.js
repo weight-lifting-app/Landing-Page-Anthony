@@ -5,13 +5,13 @@ class MemberProfile {
       this.member.addEventListener('mouseleave', () => this.mouseLeave());
     }
     mouseEnter(){
-      teamMember.forEach(member => member.classList.add('flash-border'));
-      teamMember.forEach(member => member.classList.remove('border-blank'));
+      this.member.classList.add('flash-border');
+      this.member.classList.remove('border-blank');
     }
     mouseLeave(){
-        teamMember.forEach(member => member.classList.add('border-blank'));
-        teamMember.forEach(member => member.classList.remove('flash-border'));
-      }
+        this.member.classList.add('border-blank');
+        this.member.classList.remove('flash-border');
+    }
 }
 
 
