@@ -286,7 +286,7 @@ body {
 }
 .hero-content .hero-text a button:hover {
   background-color: black;
-  border: 1px solid black;
+  border: 2px solid black;
   color: white;
 }
 @media (min-width:1000px) {
@@ -489,6 +489,11 @@ body {
   }
 }
 @media (min-width:1000px) {
+  .features-text .features-list .border-blank {
+    padding: 5px;
+  }
+}
+@media (min-width:1000px) {
   .features-text .features-list div {
     width: 25%;
     margin: 5px 0%;
@@ -550,11 +555,11 @@ body {
   color: #ffffff;
   background-color: black;
 }
-.flash-background {
-  border: 5px solid white;
-}
-.normal-background {
-  border: none;
+@media (min-width:1000px) {
+  .flash-border {
+    border: 5px solid white;
+    border-radius: 10px;
+  }
 }
 footer {
   background-color: #1d2326;
