@@ -1,25 +1,58 @@
 .nav-bar{
-    
+    background-color: @lambda-fit-red;
+    width: 100%;
+    margin-bottom: 10px;
+
+    @media @desktop{
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 0px 3%;
+
+        h1{
+            display: none;
+            color: @white;
+            font-size: 2.4rem;
+
+            @media @desktop{
+                display: flex;
+                align-items: center;
+                padding: 0px 0% 0px 3%;
+                font-weight: bold;
+            }
+        }
+    }
     nav{
         display: flex;
         justify-content: space-around;
         padding: 15px 0%;
 
+        @media @desktop{
+            justify-content: flex-end;
+            width: 50%;
+        }
         
         a{
-            border: 2px solid @white;
-            border-radius: 10px;
             padding: 5px 2%;
             text-decoration: none;
-            background-color: @white;
-            color: #000000;
+            color: @white;
             font-size: @p-font;
             width: 32%;
             text-align: center;
-
+            &:hover {
+                -webkit-text-stroke: 1px black;
+                color: black; 
+            }
+            
             @media @desktop{
-                width: 25%;
+                width: 15%;
             }
         }
     }
 }
+

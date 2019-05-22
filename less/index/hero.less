@@ -1,0 +1,89 @@
+.hero-content {
+    background-image: url('/img/ropes.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    @media @desktop {
+        margin: 0px 15%;
+        display: flex;
+        flex-direction: row;
+        background-image: none;
+    }
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+
+        @media @desktop{
+            width: 40%;
+            align-content: center;
+            flex-direction: column;
+            padding-top: 0px;
+        }
+        
+        h1 {
+            text-align: left;
+            padding: 0px 0% 0px 0%;
+            margin: 0px 1%;
+            color: @white;
+            font-size: 3.5rem;
+            font-weight: bold;
+            line-height: 1.4;
+
+            @media @desktop {
+                padding: 10px 0% 0px 0%;
+                margin: 0px 0%;
+                line-height: 1.2;
+                font-size: 7.5rem;
+                color: @white;
+                font-weight: normal;
+                font-style: italic;
+                -webkit-text-stroke: black 1px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        
+            button {
+                padding: 10px 0%;
+                font-size: 2.2rem;
+                background-color: @white;
+                border: 2px solid @white;
+                border-radius: 10px;
+                width: 100%;
+                cursor: grab;
+
+                @media @desktop{
+                    width: 80%;
+                    margin-left: 0%;
+                }
+                
+                &:hover{
+                    background-color: black;
+                    border: 1px solid black;
+                    color: white;
+                }
+            }
+        }
+    }
+    .hero-image{
+        @media @desktop{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            width: 60%;
+        }
+        img{
+            display:none;
+
+            @media @desktop{
+                display:inline;
+                height: 90%;
+                width: 300px;
+                margin: 30px 0% 0px 10%;
+            }
+        }
+    }
+}

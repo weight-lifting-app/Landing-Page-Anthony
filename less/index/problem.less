@@ -6,8 +6,9 @@
 
     @media @desktop {
         flex-direction: row;
-        margin: 50px 0%;
+        margin: 50px 15%;
         align-items: flex-start;
+        
     }
 
     .problem-text{
@@ -15,26 +16,43 @@
 
         @media @desktop{
             width:50%;
-            padding-right: 5%;
+            padding-right: 3%;
+            text-align: left;
+            line-height: 1.2;
+            display: flex;
+            flex-direction: column;
         } 
         
 
         h2 {
-            margin: 30px 0% 2px 0%;
+            margin: 30px 0% 10px 0%;
             font-size: @h1-font;
+
+            @media @desktop{
+                margin:0px 0%;
+            }
         }
 
         hr{
             margin: 0px 30% 10px 30%;
 
             @media @desktop{
-                margin: 0px 10% 10px 10%;
+                width: 65%;
+                margin: 0px 0% 10px 0%;
             }
         }
 
         p {
             margin-bottom: 10px;
             font-size: @p-font;
+            line-height: 1.4;
+            margin-bottom: 30px;
+
+            @media @desktop{
+                margin-top: 30px;
+                font-size: @h2-font;
+                margin-bottom: 0px;
+            }
         }
     }
 

@@ -1,1 +1,88 @@
-@import './index.less';
+.team-member-headline{
+    font-size: @h1-font;
+    text-align: center;
+    margin-top: 60px;
+    
+    hr{
+        margin: 10px 35%;
+        border-color:#3a4347;
+
+        @media @desktop{
+            margin: 10px 45%;
+        }
+    }
+
+    p{
+        font-size: @p-font;
+        padding: 10px 13%;
+        line-height: 1.4;
+
+        @media @desktop{
+            font-size: 2.3rem;
+            padding: 10px 19%;
+        }
+    }
+}
+.profiles{
+    @media @desktop{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 15%;
+    }
+}
+.team-member{
+    border: 5px solid @white;
+    border-radius: 10px;
+    margin: 60px 25% 0px 25%;
+    background-color: #11265f;
+
+    @media @desktop{
+        margin: 60px 5% 0px 8%;
+    }
+
+    .team-image{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        img{
+            height: 237px;
+            border-radius: 5px;
+            border-bottom: white solid 2px;
+        }
+    }
+    .team-member-info{
+        font-size: 2.2rem;
+
+        h2{
+            text-align: center;
+            margin: 10px 0%;
+        }
+
+        hr{
+            margin: 10px 40%;
+        }
+
+        h3{
+            text-align: center;
+            font-style: italic;
+            padding-bottom: 10px;
+            font-size: @h2-font;
+        }
+
+        p{
+            text-align: center;
+            padding-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        img{
+            height: 25px;
+            margin: 5px 45%;
+        }
+    }
+}
+
+footer{
+    margin-top: 10px;
+}
