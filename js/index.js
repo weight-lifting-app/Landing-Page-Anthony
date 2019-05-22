@@ -61,3 +61,18 @@ chartItem.addEventListener('mouseleave', function(eventObject){
 //   blocks.forEach(block => block.classList.remove('flash-border'))
 //   blocks.forEach(block => block.classList.add('border-blank'));
 // }
+
+class Dropdown {
+  constructor(element) {
+    this.element = element;
+    this.button = this.element.querySelector('.dropdown-button');
+    this.content = this.element.querySelector('.dropdown-content');
+    this.button.addEventListener('click', () => this.toggleContent());
+  }
+
+  toggleContent() {
+  this.content.classList.toggle('dropdown-hidden');
+  }
+}
+
+let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
