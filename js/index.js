@@ -10,7 +10,7 @@ class ListItem {
 const menuItems = document.querySelectorAll('.nav-items');
 menuItems.forEach(function(item){
   item.addEventListener('click', function(event){
-    event.preventDefault();
+    //event.preventDefault();
   });
 });
 
