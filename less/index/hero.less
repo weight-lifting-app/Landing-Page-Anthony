@@ -1,89 +1,48 @@
-.hero-content {
-    background-image: url('/img/ropes.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
+.hero-content{
+    margin-top: -9px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
 
-    @media @desktop {
-        margin: 0px 15%;
-        display: flex;
-        flex-direction: row;
-        background-image: none;
-    }
-    .hero-text {
-        display: flex;
-        flex-direction: column;
-        padding-top: 40px;
-
-        @media @desktop{
-            width: 40%;
-            align-content: center;
-            flex-direction: column;
-            padding-top: 0px;
+    .hero-text{
+        div > h1 {
+        text-align: center;
+        font-size: 5rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 83px;   
+        color: white;    
         }
-        
-        h1 {
-            text-align: left;
-            padding: 0px 0% 0px 0%;
-            margin: 0px 1%;
-            color: @white;
-            font-size: 3.5rem;
-            font-weight: bold;
-            line-height: 1.4;
-
-            @media @desktop {
-                padding: 10px 0% 0px 0%;
-                margin: 0px 0%;
-                line-height: 1.2;
-                font-size: 7.5rem;
-                color: @white;
-                font-weight: normal;
-                font-style: italic;
-                -webkit-text-stroke: black 1px;
-            }
+        div > p{
+            text-align: center;
+            padding: 0px 30%;
+            font-size: 2rem;
+            margin-top: 14px;
+            line-height: 1.25;
+            color: #808080;
         }
         a{
+            display: flex;
+            justify-content: center;
             text-decoration: none;
-            color: #000000;
-        
-            button {
-                padding: 10px 0%;
-                font-size: 2.2rem;
-                background-color: @white;
-                border: 2px solid @white;
-                border-radius: 10px;
-                width: 100%;
-                cursor: grab;
-
-                @media @desktop{
-                    width: 80%;
-                    margin-left: 0%;
-                }
-                
-                &:hover{
-                    background-color: black;
-                    border: 2px solid black;
-                    color: white;
-                }
+            margin-top: 11px;
+            button{
+                font-size: 2rem;
+                font-family: 'Montserrat', sans-serif;
+                padding: 16px 4.4%;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: white;
             }
         }
     }
     .hero-image{
-        @media @desktop{
-            display:flex;
-            justify-content: center;
-            align-content: center;
-            width: 60%;
-        }
+        margin: 55px 22.2% 0px 22.2%;
         img{
-            display:none;
-
-            @media @desktop{
-                display:inline;
-                height: 90%;
-                width: 300px;
-                margin: 30px 0% 0px 10%;
-            }
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-bottom: -2px;
         }
     }
 }
